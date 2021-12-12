@@ -1,0 +1,16 @@
+@import url('./_vars.css');
+
+.section-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 10px;
+    background: rgb(250, 250, 250);
+    padding:10px;
+    overflow: hidden;
+}
+.section-container h2{
+    margin: 10px 0;
+}

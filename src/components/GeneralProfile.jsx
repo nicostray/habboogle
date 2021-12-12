@@ -11,6 +11,7 @@ const GeneralProfile = ({userInfo}) => {
         rooms = userInfo.rooms.length
         groups = userInfo.groups.length
     }
+    
     return (
         <div className='cards'>
             <Card  name='amigos' userInfo={friends} id={0} userId={userId}/>

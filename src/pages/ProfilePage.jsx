@@ -8,6 +8,7 @@ import Cargando from '../components/Cargando';
 import GeneralProfile from '../components/GeneralProfile';
 import FriendsProfile from '../components/FriendsProfile';
 import BadgesProfile from '../components/BadgesProfile';
+import SectionProfile from '../components/SectionProfile';
 
 const ProfilePage = () => {
     const {idUsuario} = useParams();
@@ -35,11 +36,12 @@ const ProfilePage = () => {
             <div className='profilePage__container'>
                 <Profile userInfo={usuario}/>
                 <MenuProfile userInfo={usuario}/>
-                <section className='profilePage__info-container'>
+                <SectionProfile userInfo={usuario}/>
+                {/* <section className='profilePage__info-container'>
                     {section === undefined && <GeneralProfile userInfo={usuario}/>}
                     {section === 'friends' && <FriendsProfile userInfo={usuario.friends}/>}
                     {section === 'badges' && <BadgesProfile userInfo={usuario.badges}/>}
-                </section>
+                </section> */}
             </div>
             
         </main>)

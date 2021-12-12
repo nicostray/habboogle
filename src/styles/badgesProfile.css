@@ -12,6 +12,6 @@
     width: 80%;
     display:flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap:20px;
     justify-content: flex-start;
 }

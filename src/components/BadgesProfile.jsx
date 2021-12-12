@@ -13,7 +13,6 @@ const BadgesProfile = ({userInfo}) => {
 
     return (
         <div className='badges'>
-            <h2>Placas <span className='undefined'>({userInfo.length})</span></h2>
             <MiniBuscador buscar={buscarPlaca} />
             <div className='badges-container'>
                 {listaDePlacas.map(element => <Badge badgeInfo={element}/>)}

@@ -14,8 +14,7 @@ const FriendsProfile = ({userInfo}) => {
 
     return (
         <div className='friends'>
-            <h2>Amigos <span className='undefined'>({userInfo.length})</span></h2>
-            <MiniBuscador userInfo={listaDeAmigos} buscar={buscarUser}/>
+            <MiniBuscador buscar={buscarUser}/>
             <div className='friends-container'>
                 {listaDeAmigos.map(element => <Friend key={`${element.uniqueId}`} userInfo={element}/>)}
             </div>
