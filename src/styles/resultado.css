@@ -1,0 +1,54 @@
+@import url(./_vars.css);
+
+.resultado__primer-container{
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left:10%;
+
+}
+
+.resultado__segundo-container{
+    display:flex;
+    align-content: center;
+    gap:10px;
+}
+
+.resultado__bandera{
+    width: 20px;
+}
+
+.resultado__mix{
+    display:flex;
+    gap:5px;
+    align-content: center;
+}
+
+.resultado__online{
+    width: 35px;
+    object-fit: contain;
+}
+.resultado__imagen{
+    clip-path: inset(20% 0 0 0);
+    margin-top:-20px
+}
+
+.resultado_stars{
+    width: 15px;
+    object-fit: contain;
+    margin-left:20px;
+}
+
+.resultado_link{
+    font-size: 1.2rem;
+    margin-left:20px;
+    color:#1a0dab;
+    text-decoration: none;
+    margin-bottom:5px;
+    width: fit-content;
+}
+
+.resultado_link:hover{
+    text-decoration:underline;
+}

@@ -1,0 +1,17 @@
+@import url('./_vars.css');
+
+.badges{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.badges-container{
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: flex-start;
+}

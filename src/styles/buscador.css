@@ -1,0 +1,88 @@
+@import url('./_vars.css');
+
+
+.buscador-inicio{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    margin:150px auto; /*Aqui debo sacar el 200px, es solo para la demo a la barbi*/
+}
+
+.buscador-search{
+    display:flex;
+    gap:20px;
+    align-items: center;
+    padding:30px;
+    border-bottom:1px solid #dfe1e5;
+}
+
+.buscador__imagen-inicio{
+    width: 60%;
+    object-fit: contain;
+    margin-bottom:15px;
+}
+
+.buscador__imagen-search{
+    width: 180px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.buscador__input-container-inicio{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    border:1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+}
+
+.buscador__input-container-search{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    border:1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.buscador__input-container-inicio:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.buscador__input-container-search:hover{
+    box-shadow: 0 2px 8px 1px rgb(64 60 67 / 24%);
+}
+
+
+.buscador__input{
+    border:none;
+    line-height: 1.5rem;
+    margin:5px 0 ;
+    outline: none;
+    background: transparent;
+    width: 85%;
+    font-size:16px;
+    color: rgba(0,0,0,.87);
+    text-align: center;
+}
+.buscador__input::placeholder{
+    color: rgb(182, 182, 182);
+}
+
+.fa-search{
+    color: rgb(159 165 170);
+    margin-left: 15px;
+}
+
+.buscador__btn{
+    padding: 5px 15px;
+    cursor:pointer;
+    height: fit-content;
+}
+

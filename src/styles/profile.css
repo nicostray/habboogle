@@ -1,0 +1,57 @@
+@import url('./_vars.css');
+
+.profile__top-container{
+    border-bottom: 1px solid transparent;
+}
+
+.profile__portada{
+    height: 200px;
+    width: 100%;
+    background-image: url('../images/perfil-superior.png');
+}
+
+.profile__info{
+    display:flex;
+    justify-content: space-around;
+    background: white;
+    height: 160px;
+    display:flex;
+    padding-top:10px;
+}
+
+.avatar-con-info__container{
+    display:flex;
+}
+
+.avatar-container{
+    position: relative;
+    height: 50px;
+    width: 80px
+}
+
+.avatar-img{
+    position: absolute;
+    top:-100px;
+    left: -30px;
+}
+
+.barraExp__container{
+    width: 150px;
+    height: 10px;
+    background-color: var(--lightGrey);
+}
+
+.barraExp__barra{
+    height: 100%;
+    background-color: var(--primaryColor);
+    width: 50%;
+}
+
+.nombre-estado__container{
+    display:flex;
+    gap:5px;
+}
+
+.img-estado{
+    object-fit: contain;
+}

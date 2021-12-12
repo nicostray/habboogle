@@ -1,0 +1,6 @@
+@import url('./_vars.css');
+
+.badge{
+    width: 40px;
+    height: 40px;
+}

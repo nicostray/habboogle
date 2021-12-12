@@ -1,0 +1,20 @@
+@import url('./_vars.css');
+
+.cargando{
+    height: calc(100vh - 50px);
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    background-image: url('../images/perfil-fondo.png');
+}
+
+.cargando img{
+    width: 150px;
+}
+
+.cargando h1{
+    color: var(--lightBlack)
+}

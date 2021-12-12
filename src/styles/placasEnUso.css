@@ -1,0 +1,22 @@
+@import url('./_vars.css');
+
+.placasEnUso__container{
+    height: 90%;
+}
+
+.placasEnUso__container h3{
+    color: var(--grey);
+    margin-bottom: 10px;
+}
+
+.placasEnUso__container-placas{
+    display:flex;
+    gap:10px;
+    height: 50%;
+    width: 290px;
+}
+
+.placasEnUso__img{
+    width: 50px;
+    object-fit: contain;
+}

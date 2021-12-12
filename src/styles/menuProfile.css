@@ -1,0 +1,28 @@
+@import url('./_vars.css');
+
+.menu-profile{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    height: fit-content;
+    background:white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu-profile__btn{
+    padding:10px 25px;
+    text-decoration: none;
+    color: var(--lightBlack);
+    font-size:18px;
+    font-weight: bold;
+    border-radius: 5px;;
+}
+
+.menu-profile__btn:hover{
+    background-color: var(--lightGrey);
+}
+
+.menu-profile__btn--active p{
+    border-bottom: 2px solid var(--primaryColor);
+}

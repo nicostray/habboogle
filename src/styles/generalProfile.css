@@ -1,0 +1,11 @@
+@import url('./_vars.css');
+
+.cards{
+    margin:auto;
+    width: 80%;
+    padding:50px;
+    gap:50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}

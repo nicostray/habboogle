@@ -1,0 +1,32 @@
+:root{
+    --white:#FFFF;
+    --primaryColor: #2c7ec2;
+    --lightPrimaryColor: rgb(0,162,232);
+    --grey: #727272;
+    --lightGrey: #f5f5f5;
+    --semiBlack: #252525;
+    --lightBlack: #444444;
+    --red: #c63637;
+    --green: #42ab49;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.undefined{
+    color: var(--grey);
+    cursor:default;
+}
+
+.btn-primary{
+    background: var(--primaryColor);
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
