@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/habboogle/static/css/main.098189d1.chunk.css",
+    "main.js": "/habboogle/static/js/main.71c0dbe4.chunk.js",
+    "main.js.map": "/habboogle/static/js/main.71c0dbe4.chunk.js.map",
+    "runtime-main.js": "/habboogle/static/js/runtime-main.77704305.js",
+    "runtime-main.js.map": "/habboogle/static/js/runtime-main.77704305.js.map",
+    "static/js/2.10f858ef.chunk.js": "/habboogle/static/js/2.10f858ef.chunk.js",
+    "static/js/2.10f858ef.chunk.js.map": "/habboogle/static/js/2.10f858ef.chunk.js.map",
+    "index.html": "/habboogle/index.html",
+    "static/css/main.098189d1.chunk.css.map": "/habboogle/static/css/main.098189d1.chunk.css.map",
+    "static/js/2.10f858ef.chunk.js.LICENSE.txt": "/habboogle/static/js/2.10f858ef.chunk.js.LICENSE.txt",
+    "static/media/amigos.9f03799e.png": "/habboogle/static/media/amigos.9f03799e.png",
+    "static/media/grupos.b43da728.png": "/habboogle/static/media/grupos.b43da728.png",
+    "static/media/placas.332f5d4e.png": "/habboogle/static/media/placas.332f5d4e.png",
+    "static/media/progress_habbos.2ecff569.gif": "/habboogle/static/media/progress_habbos.2ecff569.gif",
+    "static/media/salas.b9a72dfd.png": "/habboogle/static/media/salas.b9a72dfd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77704305.js",
+    "static/js/2.10f858ef.chunk.js",
+    "static/css/main.098189d1.chunk.css",
+    "static/js/main.71c0dbe4.chunk.js"
+  ]
+}
