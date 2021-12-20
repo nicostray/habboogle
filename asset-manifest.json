@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/habboogle/static/css/main.f8937bfb.chunk.css",
-    "main.js": "/habboogle/static/js/main.8d284d18.chunk.js",
-    "main.js.map": "/habboogle/static/js/main.8d284d18.chunk.js.map",
+    "main.js": "/habboogle/static/js/main.4d1c5bab.chunk.js",
+    "main.js.map": "/habboogle/static/js/main.4d1c5bab.chunk.js.map",
     "runtime-main.js": "/habboogle/static/js/runtime-main.77704305.js",
     "runtime-main.js.map": "/habboogle/static/js/runtime-main.77704305.js.map",
     "static/js/2.16dd77d6.chunk.js": "/habboogle/static/js/2.16dd77d6.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.77704305.js",
     "static/js/2.16dd77d6.chunk.js",
     "static/css/main.f8937bfb.chunk.css",
-    "static/js/main.8d284d18.chunk.js"
+    "static/js/main.4d1c5bab.chunk.js"
   ]
 }
