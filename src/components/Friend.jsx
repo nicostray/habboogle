@@ -31,7 +31,7 @@ const Friend = ({userInfo}) => {
                     <img className='friend__img' src={userInfo.online ? online : offline} alt="" />
                 </div>
                 <p className={`friend__mision ${misionCheck()==='No definida' && 'undefined'}`}>{misionCheck()}</p>
-                <a target={'_blank'} className='friend__btn btn-primary' href={`/profile/${userInfo.uniqueId}/`} rel='noreferrer'>Ver perfil</a>
+                <a target={'_blank'} className='friend__btn btn-primary' href={`habboogle/profile/${userInfo.uniqueId}/`} rel='noreferrer'>Ver perfil</a>
             </div>
         </div>
     )
