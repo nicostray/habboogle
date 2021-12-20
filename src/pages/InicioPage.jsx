@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { Helmet } from 'react-helmet';
 import Buscador from '../components/Buscador';
+import '../styles/inicioPage.css'
 
 const InicioPage = () => {
-    useEffect(() => {
-        document.title='Habboogle' 
-    },[])
+
     return (
-        <div>
+        <div className='inicio-page'>
+            <Helmet>
+                <title>Habboogle</title>
+            </Helmet>
             <Buscador css='inicio'/>
         </div>
     )

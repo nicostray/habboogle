@@ -1,0 +1,48 @@
+@import url('./_vars.css');
+
+.group{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.342);
+    padding:10px;
+    border-radius: 5px;
+    gap:10px;
+}
+
+.group img{
+    width: 50px;
+}
+.group__info{
+    text-align: center;
+    width: 400px;
+}
+
+.group__description{
+    color: var(--lightBlack);
+}
+
+.group__status{
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+
+.group__btn{
+    padding: 10px 5px;
+    text-decoration: none;
+    margin: 0px 5px;
+    white-space: nowrap;
+}
+
+@media(max-width: 830px){
+    .group{
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .group__info{
+        width: 250px;
+    }
+}

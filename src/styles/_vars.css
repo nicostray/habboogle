@@ -20,6 +20,7 @@
 .undefined{
     color: var(--grey);
     cursor:default;
+    font-style: italic;
 }
 
 .btn-primary{
@@ -29,4 +30,5 @@
     cursor:pointer;
     font-weight: bold;
     border-radius: 5px;
+    width: fit-content;
 }

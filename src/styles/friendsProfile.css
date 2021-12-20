@@ -14,3 +14,21 @@
     gap:10px;
     justify-content: center;
 }
+
+@media(max-width: 1410px){
+    .friends-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media(max-width: 880px){
+    .friends-container{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width: 600px){
+    .friends-container{
+        grid-template-columns: auto;
+    }
+}

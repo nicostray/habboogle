@@ -5,16 +5,16 @@ import '../styles/profilePage.css'
 import Profile from '../components/Profile';
 import MenuProfile from '../components/MenuProfile';
 import Cargando from '../components/Cargando';
-import GeneralProfile from '../components/GeneralProfile';
-import FriendsProfile from '../components/FriendsProfile';
-import BadgesProfile from '../components/BadgesProfile';
 import SectionProfile from '../components/SectionProfile';
+import Buscador from '../components/Buscador';
+import UserNotFound from './UserNotFound';
+import { Helmet } from 'react-helmet';
 
 const ProfilePage = () => {
     const {idUsuario} = useParams();
-    const {section} = useParams();
     const [usuario,setUsuario] = useState('')
     const [loading,setLoading] = useState(true)
+    const [userExist, setUserExist] = useState(true);
 
     useEffect(() => {
         axios.get(`https://www.habbo.com/api/public/users/${idUsuario}/profile`)
@@ -22,26 +22,29 @@ const ProfilePage = () => {
                 const datos = res.data;
                 setUsuario(datos)
                 setLoading(false)
-                document.title=`Perfil de ${usuario.user && usuario.user.name}`
+                
+            }).catch(() =>{
+                setUserExist(false)
             })
         
     },[idUsuario, usuario.user])
 
-
     if (loading === true){
-         return<Cargando />
+        if(userExist===false){
+            return <UserNotFound />
+        }
+         return<Cargando /> 
     }else{
         return(
         <main className='profilePage__body'>
+            <Helmet>
+                <title>{`Perfil de ${usuario.user && usuario.user.name}`}</title>
+            </Helmet>
+            <Buscador css='profile'/>
             <div className='profilePage__container'>
                 <Profile userInfo={usuario}/>
                 <MenuProfile userInfo={usuario}/>
                 <SectionProfile userInfo={usuario}/>
-                {/* <section className='profilePage__info-container'>
-                    {section === undefined && <GeneralProfile userInfo={usuario}/>}
-                    {section === 'friends' && <FriendsProfile userInfo={usuario.friends}/>}
-                    {section === 'badges' && <BadgesProfile userInfo={usuario.badges}/>}
-                </section> */}
             </div>
             
         </main>)

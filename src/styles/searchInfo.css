@@ -1,0 +1,34 @@
+@import url('./_vars.css');
+
+
+.search-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    top:20px;
+    right: 20px;
+    width: 400px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    gap:5px;
+    background: white;
+    overflow:hidden;
+}
+
+.search-info img{
+    width: 150px;
+    margin-top:10px;
+}
+
+.search-information{
+    text-align: center;
+    background:var(--lightGrey);
+    padding-bottom:20px;
+}
+.search-info h2{
+    font-size: 2rem;
+}
+.search-info p{
+    color: var(--lightBlack);
+}

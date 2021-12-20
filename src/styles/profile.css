@@ -5,22 +5,38 @@
 }
 
 .profile__portada{
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-image: url('../images/perfil-superior.png');
 }
 
 .profile__info{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     background: white;
-    height: 160px;
+    min-height: 160px;
     display:flex;
     padding-top:10px;
 }
 
+.info-container{
+    height: fit-content;
+}
+
+.profile__bottom-container{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.profile__avatar-info{
+    display:flex;
+    gap:10px;
+    padding-bottom:10px;
+}
+
 .avatar-con-info__container{
     display:flex;
+    height: fit-content;
 }
 
 .avatar-container{
@@ -49,9 +65,34 @@
 
 .nombre-estado__container{
     display:flex;
-    gap:5px;
+    flex-wrap: wrap;
+    gap:5px;   
 }
 
 .img-estado{
     object-fit: contain;
+}
+
+@media (max-width: 730px){
+    .profile__bottom-container{
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        width: 100%;
+    }
+
+    .avatar-con-info__container{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+    .profile__portada{
+        height: 220px;
+    }
+
+    .avatar-img{
+        left:-20px;
+    }
 }

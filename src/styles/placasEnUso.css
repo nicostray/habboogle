@@ -1,7 +1,11 @@
 @import url('./_vars.css');
 
 .placasEnUso__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     height: 90%;
+    width: 40%;
 }
 
 .placasEnUso__container h3{
@@ -11,12 +15,25 @@
 
 .placasEnUso__container-placas{
     display:flex;
+    justify-content: center;
     gap:10px;
+    flex-wrap: wrap;
     height: 50%;
-    width: 290px;
+    width: 100%;
 }
 
+.placasEnUso__container-placas p{
+    padding: 10px 0;
+}
 .placasEnUso__img{
     width: 50px;
+    height: 50px;
     object-fit: contain;
+}
+
+@media(max-width: 730px){
+    .placasEnUso__container{
+        width: 100%;
+        margin-bottom:10px;
+    }
 }

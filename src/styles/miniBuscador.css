@@ -20,3 +20,9 @@ margin-bottom:20px;
 .mini-buscador button{
     padding: 5px 10px;
 }
+
+@media(max-width:400px){
+    .mini-buscador label{
+        display:none;
+    }
+}

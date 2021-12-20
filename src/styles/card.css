@@ -1,7 +1,7 @@
 @import url('./_vars.css');
 
 .card{
-    width: 350px;
+    width: 40%;
     background-color: white;
     display:flex;
     flex-direction: column;
@@ -15,7 +15,6 @@
     width: 100%;
     height: 200px;
     background-color: var(--lightPrimaryColor);
-    /* background-color: var(--semiBlack); */
     overflow: hidden;
     object-fit: cover;
     position:relative;
@@ -41,4 +40,19 @@
     padding: 8px 30px;
     margin-top:5px;
     text-transform: capitalize;
+}
+
+
+@media(max-width: 800px){
+    .card{
+        height: 250px;
+    }
+
+}
+
+@media(max-width: 650px){
+    .card{
+        width: 100%;
+    }
+
 }

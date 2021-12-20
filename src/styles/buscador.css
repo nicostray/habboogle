@@ -1,21 +1,60 @@
 @import url('./_vars.css');
 
 
+
 .buscador-inicio{
+    min-width: 700px;
     width: 50%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap:15px;
-    margin:150px auto; /*Aqui debo sacar el 200px, es solo para la demo a la barbi*/
+    gap:10px;
+    margin:-10% auto 0 auto;
 }
 
 .buscador-search{
     display:flex;
     gap:20px;
     align-items: center;
-    padding:30px;
+    height: 80px;
+    padding-left:20px;
     border-bottom:1px solid #dfe1e5;
+    background: #252525;
+}
+
+.buscador-profile{
+    position:fixed;
+    z-index: 99;
+    display:flex;
+    justify-content:flex-start;
+    width: 100%;
+    gap:20px;
+    align-items: center;
+    background-color: #252525;
+    padding:5px;
+    box-shadow: 0px 7px 16px -5px rgba(0, 0, 0, 0.164);
+}
+.buscador__input-btn-inicio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap:10px;
+}
+
+.buscador__input-btn-search{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    gap:10px;
+}
+
+.buscador__input-btn-profile{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    gap:10px;
 }
 
 .buscador__imagen-inicio{
@@ -25,6 +64,13 @@
 }
 
 .buscador__imagen-search{
+    width: 180px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.buscador__imagen-profile{
+    margin-left: 50px;
     width: 180px;
     object-fit: contain;
     cursor: pointer;
@@ -44,10 +90,24 @@
     display:flex;
     align-items: center;
     gap: 10px;
+    min-width: 500px;
     width: 40%;
+    border:1px solid #dfe1e5;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.buscador__input-container-profile{
+    display:flex;
+    align-items: center;
+    width: 30%;
     border:1px solid #dfe1e5;
     border-radius: 24px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    min-width: fit-content;
+    background-color: white;
+    gap:5px;
 }
 
 .buscador__input-container-inicio:hover{
@@ -69,20 +129,95 @@
     width: 85%;
     font-size:16px;
     color: rgba(0,0,0,.87);
-    text-align: center;
 }
-.buscador__input::placeholder{
-    color: rgb(182, 182, 182);
-}
+
 
 .fa-search{
     color: rgb(159 165 170);
     margin-left: 15px;
 }
 
-.buscador__btn{
-    padding: 5px 15px;
-    cursor:pointer;
-    height: fit-content;
+.buscador__btn-inicio{
+    padding:10px 30px;
 }
 
+.buscador__btn-search{
+    padding:10px 20px;
+}
+
+.buscador__btn-profile{
+    padding:8px 15px;
+}
+
+@media (max-width: 900px){
+    .buscador-inicio{
+        min-width: 500px;
+    }
+    .buscador__input-container-search{
+        min-width: 300px;
+    }
+   
+}
+@media (max-width: 650px){
+    .buscador-search{
+        padding:10px 0;
+        flex-direction: column;
+        height: fit-content;
+        gap:10px;
+        align-items: center;
+    }
+
+    .buscador__input-btn-search{
+        justify-content: center;
+    }
+
+    .buscador__input-container-search{
+        min-width: 350px;
+    }
+    .buscador__imagen-search{
+        width: 250px;
+    }
+
+    .buscador-profile{
+        padding:10px 0;
+        flex-direction: column;
+        height: fit-content;
+        gap:10px;
+        align-items: center;
+    }
+
+    .buscador__input-btn-profile{
+        justify-content: center;
+    }
+
+    .buscador__input-container-profile{
+        min-width: 60%;
+    }
+    .buscador__imagen-profile{
+        width: 250px;
+    }
+
+    .buscador__imagen-profile{
+        margin:0;
+    }
+}
+
+@media (max-width: 500px){
+    .buscador-inicio{
+        min-width: 350px;
+    }
+
+    .buscador__imagen-inicio{
+        width: 80%;
+    }
+    .buscador__input-container-search{
+        min-width: 60%;
+    }
+    .buscador__input::placeholder{
+        font-size: 12px;
+    }
+
+    .buscador__imagen-profile{
+        width: 200px;
+    }
+}

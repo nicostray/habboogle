@@ -1,8 +1,12 @@
 @import url('./_vars.css');
 
 footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     color: #70757a;
     background: rgb(242 242 242);
     width: 100%;
     text-align: center;
+    height: 50px;
 }

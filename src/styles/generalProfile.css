@@ -2,10 +2,16 @@
 
 .cards{
     margin:auto;
-    width: 80%;
+    width: 100%;
     padding:20px 50px;
     gap:50px;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+@media(max-width: 500px){
+    .cards{
+        padding:20px 10px;
+    }
 }

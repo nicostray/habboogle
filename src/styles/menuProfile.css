@@ -3,7 +3,7 @@
 .menu-profile{
     display:flex;
     justify-content: center;
-    gap:30px;
+    flex-wrap: wrap;
     height: fit-content;
     background:white;
     border-bottom-right-radius: 10px;
@@ -24,5 +24,6 @@
 }
 
 .menu-profile__btn--active p{
-    border-bottom: 2px solid var(--primaryColor);
+    /* border-bottom: 2px solid var(--primaryColor); */
+    color: var(--primaryColor)
 }

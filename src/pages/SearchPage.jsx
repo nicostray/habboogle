@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, Fragment} from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
 import Buscador from '../components/Buscador';
 import Resultado from '../components/Resultado';
-import { Fragment } from 'react/cjs/react.production.min';
+import '../styles/searchPage.css'
+import { Helmet } from 'react-helmet';
 
 const SearchPage = () => {
     const {nombre} = useParams();
@@ -18,23 +19,26 @@ const SearchPage = () => {
             axios(`https://www.habbo.${hotel}/api/public/users?name=${nombre}`)
                 .then(res => {
                     const usuario = res.data;
-                    setUsuarios(usuarios => [...usuarios, usuario]) 
-                    document.title=`Resultados de ${nombre}`                  
+                    setUsuarios(usuarios => [...usuarios, usuario])              
                 })
         }
         hoteles.forEach(element => obtenerUsuarios(element))
-        
+
     },[nombre])
     
 
     return (
         <Fragment>
-            <Buscador css='search'/>
+            <Helmet>
+                <title>{`Resultados de ${nombre}` }</title>
+            </Helmet>
+        <Buscador css='search'/>
+        <div className='search-page'>
             <div className="search-container">
-                {usuarios.map(element => (<Resultado key={`${element.uniqueId}`} userInfo={element} />))}
-                {/* {usuarios.map(element => (<p>{element.uniqueId} hotel: {element.uniqueId && element.uniqueId.substr(2,2)}</p>))} */}
-                
+                <p className='search-encontrados'>Usuarios encontrados: {usuarios.length}</p>
+                    {usuarios.map(element => (<Resultado key={`${element.uniqueId}`} userInfo={element} />))}
             </div>
+        </div>
         </Fragment>
     )
 }

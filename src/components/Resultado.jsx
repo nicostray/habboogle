@@ -13,8 +13,6 @@ const Resultado = ({userInfo}) => {
     return (
         <div className='resultado__primer-container'>
                 <Link className='resultado_link' to= {linkPerfil}>Ver perfil de {userInfo.name}</Link>
-
-
             <div className='resultado__segundo-container'>
                 <img className='resultado__imagen' src={imagenAvatar} alt="imagen de usuario" />
                 <div>

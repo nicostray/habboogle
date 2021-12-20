@@ -16,5 +16,6 @@
 }
 
 .cargando h1{
-    color: var(--lightBlack)
+    color: var(--lightBlack);
+    text-align: center;
 }
