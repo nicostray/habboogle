@@ -14,7 +14,7 @@ const Buscador = ({css}) => {
     }
 
     const buscar = () => {
-        navigate(`/search/${nombre}`)
+        if(nombre!=='') navigate(`/search/${nombre}`)   
     }
 
     
@@ -26,7 +26,8 @@ const Buscador = ({css}) => {
                 <div className={classNames({[`buscador__input-btn-${css}`] : css})}>
                 <div className={classNames({[`buscador__input-container-${css}`] : css})}>
                     <i className="fas fa-search"></i>
-                    <input className='buscador__input' type='text' onChange={handleInputChange} onKeyDown={(e) => e.key==='Enter' && buscar()} autoComplete="off" />
+                    <input className='buscador__input' type='text' value={nombre} onChange={handleInputChange} onKeyDown={(e) => e.key==='Enter' && buscar()} autoComplete="off" />
+                    <i className="fas fa-times" onClick={() => setNombre('')}></i>
                 </div>
 
                 <button className={classNames('btn-primary',{[`buscador__btn-${css}`] : css})} onClick={buscar}>Buscar</button>

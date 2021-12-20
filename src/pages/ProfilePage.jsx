@@ -15,19 +15,28 @@ const ProfilePage = () => {
     const [usuario,setUsuario] = useState('')
     const [loading,setLoading] = useState(true)
     const [userExist, setUserExist] = useState(true);
+    const resetUser = () =>{
+        setUsuario('')
+        setLoading(true)
+        setUserExist(true)
+    }
 
+    // useEffect(() => {
+    //     setUsuario('')
+    //     setLoading(true)
+    //     setUserExist(true)
+    // }, [])
     useEffect(() => {
         axios.get(`https://www.habbo.com/api/public/users/${idUsuario}/profile`)
             .then(res =>{
                 const datos = res.data;
                 setUsuario(datos)
                 setLoading(false)
-                
             }).catch(() =>{
                 setUserExist(false)
             })
         
-    },[idUsuario, usuario.user])
+    },[idUsuario])
 
     if (loading === true){
         if(userExist===false){
@@ -44,7 +53,7 @@ const ProfilePage = () => {
             <div className='profilePage__container'>
                 <Profile userInfo={usuario}/>
                 <MenuProfile userInfo={usuario}/>
-                <SectionProfile userInfo={usuario}/>
+                <SectionProfile userInfo={usuario} reset={resetUser}/>
             </div>
             
         </main>)

@@ -137,6 +137,13 @@
     margin-left: 15px;
 }
 
+.fa-times{
+    color: rgb(159 165 170);
+    font-size:20px;
+    margin-right:15px;
+    cursor:pointer;
+}
+
 .buscador__btn-inicio{
     padding:10px 30px;
 }
@@ -205,10 +212,11 @@
 @media (max-width: 500px){
     .buscador-inicio{
         min-width: 350px;
+        gap:0;
     }
 
     .buscador__imagen-inicio{
-        width: 80%;
+        width: 70%;
     }
     .buscador__input-container-search{
         min-width: 60%;

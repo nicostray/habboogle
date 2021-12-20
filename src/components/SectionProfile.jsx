@@ -7,7 +7,7 @@ import BadgesProfile from './BadgesProfile'
 import RoomsProfile from './RoomsProfile'
 import GroupsProfile from './GroupsProfile'
 
-const SectionProfile = ({userInfo}) => {
+const SectionProfile = ({userInfo, reset}) => {
     const {section} = useParams()
     let actualSection, dataSection = '';
 
@@ -46,7 +46,7 @@ const SectionProfile = ({userInfo}) => {
         <section className='section-container'>
             <h2>{actualSection} {section!==undefined && <span className='undefined'>({dataSection.length})</span>}</h2>
             {section === undefined && <GeneralProfile userInfo={userInfo}/>}
-            {section === 'friends' && <FriendsProfile userInfo={userInfo.friends}/>}
+            {section === 'friends' && <FriendsProfile userInfo={userInfo.friends} reset={reset}/>}
             {section === 'badges' && <BadgesProfile userInfo={userInfo.badges}/>}
             {section === 'rooms' && <RoomsProfile roomInfo={userInfo.rooms}/>}
             {section === 'groups' && <GroupsProfile groupInfo={userInfo.groups}/>}

@@ -16,7 +16,7 @@ const Room = ({roomInfo}) => {
                 <div className='room-info'>
                     <h3>{roomInfo.name}</h3>
                     <p className={`room__description`}>{resultado}</p>
-                    <p className='room__date'><b>Creada:</b> {roomInfo.creationTime.substr(0,10)}</p>
+                    <p className='room__date'><b>Creada:</b> {roomInfo.creationTime && roomInfo.creationTime.substr(0,10)}</p>
 
                     <div className='room__mix'>
                         <p className='room_points'>Puntos: {roomInfo.rating}</p>

@@ -10,8 +10,8 @@ const Profile = ({userInfo}) => {
 
     if (userInfo){
         nombre = userInfo.user.name
-        creado = userInfo.user.memberSince.substr(0,10)
-        ultimaConexion = userInfo.user.lastAccessTime && userInfo.user.lastAccessTime.substr(0,10)
+        creado = userInfo.user.memberSince.substr(0,10).split(" ")[0].split("-").reverse().join("-")
+        ultimaConexion = userInfo.user.lastAccessTime && userInfo.user.lastAccessTime.substr(0,10).split(" ")[0].split("-").reverse().join("-")
         gemas = userInfo.user.starGemCount
         nivel = userInfo.user.currentLevel
         expPorcentaje = userInfo.user.currentLevelCompletePercent
