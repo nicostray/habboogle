@@ -7,7 +7,8 @@ import ProfilePage from '../pages/ProfilePage'
 import SearchPage from '../pages/SearchPage'
 const AppRouter = () => {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router >
+            {/* basename={process.env.PUBLIC_URL} */}
             <Routes>
                 <Route exact path="/profile/:idUsuario" element={<ProfilePage/>} />
                 <Route exact path="/profile/:idUsuario/:section" element={<ProfilePage />} />
@@ -17,7 +18,7 @@ const AppRouter = () => {
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />
-        </Router basename={process.env.PUBLIC_URL}>
+        </Router>
     )
 }
 
