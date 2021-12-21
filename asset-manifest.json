@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/habboogle/static/css/main.fdfde8ff.chunk.css",
-    "main.js": "/habboogle/static/js/main.9de2a803.chunk.js",
-    "main.js.map": "/habboogle/static/js/main.9de2a803.chunk.js.map",
+    "main.js": "/habboogle/static/js/main.50469a4a.chunk.js",
+    "main.js.map": "/habboogle/static/js/main.50469a4a.chunk.js.map",
     "runtime-main.js": "/habboogle/static/js/runtime-main.77704305.js",
     "runtime-main.js.map": "/habboogle/static/js/runtime-main.77704305.js.map",
-    "static/js/2.16dd77d6.chunk.js": "/habboogle/static/js/2.16dd77d6.chunk.js",
-    "static/js/2.16dd77d6.chunk.js.map": "/habboogle/static/js/2.16dd77d6.chunk.js.map",
+    "static/js/2.4e4dcb96.chunk.js": "/habboogle/static/js/2.4e4dcb96.chunk.js",
+    "static/js/2.4e4dcb96.chunk.js.map": "/habboogle/static/js/2.4e4dcb96.chunk.js.map",
     "index.html": "/habboogle/index.html",
     "static/css/main.fdfde8ff.chunk.css.map": "/habboogle/static/css/main.fdfde8ff.chunk.css.map",
-    "static/js/2.16dd77d6.chunk.js.LICENSE.txt": "/habboogle/static/js/2.16dd77d6.chunk.js.LICENSE.txt",
+    "static/js/2.4e4dcb96.chunk.js.LICENSE.txt": "/habboogle/static/js/2.4e4dcb96.chunk.js.LICENSE.txt",
     "static/media/amigos.9f03799e.png": "/habboogle/static/media/amigos.9f03799e.png",
     "static/media/grupos.b43da728.png": "/habboogle/static/media/grupos.b43da728.png",
     "static/media/placas.332f5d4e.png": "/habboogle/static/media/placas.332f5d4e.png",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.77704305.js",
-    "static/js/2.16dd77d6.chunk.js",
+    "static/js/2.4e4dcb96.chunk.js",
     "static/css/main.fdfde8ff.chunk.css",
-    "static/js/main.9de2a803.chunk.js"
+    "static/js/main.50469a4a.chunk.js"
   ]
 }
