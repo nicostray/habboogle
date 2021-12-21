@@ -7,7 +7,7 @@ import ProfilePage from '../pages/ProfilePage'
 import SearchPage from '../pages/SearchPage'
 const AppRouter = () => {
     return (
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter >
             <Routes>
                 <Route exact path="/profile/:idUsuario" element={<ProfilePage/>} />
                 <Route exact path="/profile/:idUsuario/:section" element={<ProfilePage />} />
