@@ -21,11 +21,7 @@ const ProfilePage = () => {
         setUserExist(true)
     }
 
-    // useEffect(() => {
-    //     setUsuario('')
-    //     setLoading(true)
-    //     setUserExist(true)
-    // }, [])
+
     useEffect(() => {
         axios.get(`https://www.habbo.com/api/public/users/${idUsuario}/profile`)
             .then(res =>{

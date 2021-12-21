@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/friendsProfile.css'
 import Friend from './Friend'
 import MiniBuscador from './MiniBuscador'
 
 const FriendsProfile = ({userInfo, reset}) => {
-    
+
     const [listaDeAmigos, setListaDeAmigos] = useState(userInfo)
 
     const buscarUser = (nombreUser) => {

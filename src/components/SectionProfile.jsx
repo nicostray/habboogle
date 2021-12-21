@@ -15,7 +15,7 @@ const SectionProfile = ({userInfo, reset}) => {
 
         case undefined:
             actualSection = 'Visión general'
-            dataSection = '1234'
+            dataSection = ''
             break;
 
         case 'friends':
