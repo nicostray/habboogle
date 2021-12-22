@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import '../styles/roomsProfile.css'
 import MiniBuscador from './MiniBuscador'
 import Room from './Room'
@@ -10,6 +10,10 @@ const RoomsProfile = ({roomInfo}) => {
        const encontrado = roomInfo.filter((nombre) => nombre.name.toLowerCase().includes(nombreSala) === true)
        setListaDeSalas(encontrado)
     }
+    
+    useEffect(()=>{
+        setListaDeSalas(roomInfo)
+    },[roomInfo])
 
     return (
         <div className='rooms'>

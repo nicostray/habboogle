@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route, Navigate, HashRouter} from 'react-router-dom'
+import { Routes, Route, Navigate, HashRouter} from 'react-router-dom'
 import Footer from '../components/Footer'
 import InicioPage from '../pages/InicioPage'
 import NotFoundPage from '../pages/NotFoundPage'

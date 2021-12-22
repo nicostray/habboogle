@@ -12,6 +12,10 @@ const FriendsProfile = ({userInfo, reset}) => {
        setListaDeAmigos(encontrado)
     }
 
+    useEffect(() =>{
+     setListaDeAmigos(userInfo)   
+    },[userInfo])
+
     return (
         <div className='friends'>
             <MiniBuscador buscar={buscarUser}/>
